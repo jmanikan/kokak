@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'sessions/new'
   post "sessions/create"
   get 'sessions/destroy'
+  get 'buddies', to: 'users#buddies', as: 'buddies'
 
   resources :users
   root to: 'users#new'
