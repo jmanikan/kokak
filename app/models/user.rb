@@ -14,6 +14,7 @@ class User < ActiveRecord::Base
 
   validates :email, uniqueness: true, presence: true
   #format: { with: /^[\w.+-]+@([\w]+.)+\w+$/ }
+  has_many :ribbits
 
   private # All following methods cannot be accessed outside the class (on instances)
 
