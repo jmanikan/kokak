@@ -7,11 +7,11 @@
 <body>
   <header>
       <div class="wrapper">
-        <img src="/gfx/logo.png">
+        <img src=""> <!-- Put Kokak Logo Here !-->
         <span>Kokak!</span>
         <% if current_user %>
-          <%= link_to "Public Ribbits", ribbits_path %>
-          <%= link_to "Buddies' Ribbits", buddies_path %>
+          <%= link_to "Public Kokaks", ribbits_path %>
+          <%= link_to "Buddies' Kokaks", buddies_path %>
           <%= link_to "Log Out", sessions_destroy_path %>
         <% else %>
           <%= form_tag sessions_create_path do %>
@@ -32,7 +32,7 @@
   </div>
   <footer>
       <div class="wrapper">
-          Kokak! Kokak! Kokak! <img src="/gfx/logo-nettuts.png">
+          Kokak! Kokak! Kokak! <!--<img src="/gfx/logo-nettuts.png">!-->
       </div>
   </footer>
 </body>

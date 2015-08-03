@@ -1,21 +1,21 @@
 <% if current_user %>
 <div id="createRibbit" class="panel right">
-    <h1>Create a Ribbit</h1>
+    <h1>Create a Kokak</h1>
     <p>
     <%= form_for @ribbit do |f| %>
         <%= f.textarea :content, class: 'ribbitText' %>
-        <%= f.submit "Ribbit!" %>
+        <%= f.submit "Kokak!" %>
     <% end %>
     </p>
 </div>
 <% end %>
 <div id="ribbits" class="panel left">
-    <h1>Your Ribbit Profile</h1>
+    <h1>Your Kokak Profile</h1>
     <div class="ribbitWrapper">
         <img class="avatar" src="<%= @user.avatar_url %>">
         <span class="name"><%= @user.name %></span> @<%= @user.username %>
         <p>
-        <%= @user.ribbits.size %> Ribbits
+        <%= @user.ribbits.size %> Kokaks
           <span class="spacing"><%= @user.followers.count %> Followers</span>
           <span class="spacing"><%= @user.followeds.count %> Following</span>
         </p>
@@ -34,7 +34,7 @@
     </div>
 </div>
 <div class="panel left">
-    <h1>Your Ribbits</h1>
+    <h1>Your Kokaks</h1>
     <% @user.ribbits.each do |ribbit| %>
         <div class="ribbitWrapper">
             <img class="avatar" src="<%= @user.avatar_url %>">

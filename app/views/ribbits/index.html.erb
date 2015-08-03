@@ -1,16 +1,16 @@
 <% if current_user %>
 <div id="createRibbit" class="panel right">
-    <h1>Create a Ribbit</h1>
+    <h1>Create a Kokak</h1>
     <p>
     <%= form_for @ribbit do |f| %>
         <%= f.textarea :content, class: 'ribbitText' %>
-        <%= f.submit "Ribbit!" %>
+        <%= f.submit "Kokak!" %>
     <% end %>
     </p>
 </div>
 <% end %>
 <div class="panel left">
-    <h1>Public Ribbits
+    <h1>Public Kokaks
       <%= link_to "Public Profiles", users_path %>
       <%= link_to "My Profile", current_user %></h1>
     <% @ribbits.each do |ribbit| %>
