@@ -12,8 +12,8 @@ class User < ActiveRecord::Base
 
   validates :username, uniqueness: true, presence: true
 
-  validates :email, uniqueness: true, presence: true,
-  format: { with: /^[\w.+-]+@([\w]+.)+\w+$/ }
+  validates :email, uniqueness: true, presence: true
+  #format: { with: /^[\w.+-]+@([\w]+.)+\w+$/ }
 
   private # All following methods cannot be accessed outside the class (on instances)
 

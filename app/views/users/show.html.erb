@@ -1,0 +1,27 @@
+<div id="createKokak" class="panel right">
+    <h1>Create a Kokak</h1>
+    <p>
+    <form>
+        <textarea name="text" class="kokakText"></textarea>
+        <input type="submit" value="Kokak!">
+    </form>
+    </p>
+</div>
+<div id="kokaks" class="panel left">
+    <h1>Your Kokak Profile</h1>
+    <div class="kokakWrapper">
+        <img class="avatar" src="<%= @user.avatar_url %>">
+        <span class="name"><%= @user.name %></span> @<%= @user.username %>
+        <p>
+        XX Kokaks
+        <span class="spacing">XX Followers</span>
+        <span class="spacing">XX Following</span>
+        </p>
+    </div>
+</div>
+<div class="panel left">
+    <h1>Your Kokaks</h1>
+    <div class="kokakWrapper">
+        Kokaks coming . . .
+    </div>
+</div>
