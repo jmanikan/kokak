@@ -1,14 +1,14 @@
 class UsersController < ApplicationController
 
   def index
-    @users = User.all
+    @user = User.all
   end
 
   def new
     if current_user
         redirect_to buddies_path
     else
-        @user = User.new
+      @user = User.new
     end
   end
 
